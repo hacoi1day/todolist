@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'home.scss';
+@import 'task.scss';
+
+.app {
+    .title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+    }
+}
