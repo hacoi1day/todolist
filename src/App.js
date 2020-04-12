@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import AddTask from './components/AddTask'
+import ListTask from './components/ListTask'
 
 export default class App extends Component {
     render() {
@@ -18,7 +19,7 @@ export default class App extends Component {
                             <AddTask/>
                         </div>
                         <div className="col-md-7">
-                            Cupidatat ad sint culpa culpa aliqua adipisicing amet ex amet nostrud cillum. Et et excepteur qui Lorem minim cupidatat adipisicing minim quis commodo dolore est. Ad laboris officia aute adipisicing ex ullamco. Dolor aliqua aliquip sunt reprehenderit voluptate ipsum. Enim consequat eu commodo excepteur sint. Ex ipsum commodo eiusmod aliquip. Irure velit nisi id eu ut laboris voluptate laboris nulla commodo adipisicing exercitation ea do.
+                            <ListTask/>
                         </div>
                     </div>
                 </div>

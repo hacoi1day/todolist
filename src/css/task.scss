@@ -5,9 +5,29 @@
     }
 
     .list-task {
-        
-        ._1task {
+        .title {
+            font-size: 18px;
+        }
 
+        ._1task {
+            font-size: 15px;
+            .task-icon {
+                margin-right: 10px;
+            }
+            .task-title {
+                font-weight: bold;
+            }
+            .action {
+                float: right;
+                i {
+                    margin-left: 10px;
+                    color: #5f5f5f;
+                    cursor: pointer;
+                }
+                i:hover {
+                    color: #000000;
+                }
+            }
         }
     }
 }
