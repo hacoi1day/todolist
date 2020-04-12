@@ -18,6 +18,13 @@ const taskReducer = (state = initialState, action) => {
                 ...state,
                 items: [...state.items, task]
             };
+        case types.DELETE_TASK:
+            let items = state.items;
+            items = items.filter(item => item.id !== parseInt(action.payload));
+            return {
+                ...state,
+                items
+            };
         default:
             return state;
     }

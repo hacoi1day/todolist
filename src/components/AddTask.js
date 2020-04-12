@@ -36,7 +36,14 @@ class AddTask extends Component {
             body : JSON.stringify(task)
         }).then(res => res.json())
         .then(task => {
+            // change store
             this.props.newTask(task);
+            // reset form
+            this.setState({
+                title: '',
+                description: '',
+                status: 0,
+            })
         });
     }
 
