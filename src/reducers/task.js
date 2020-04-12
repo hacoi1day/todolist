@@ -8,10 +8,15 @@ const initialState = {
 const taskReducer = (state = initialState, action) => {
     switch (action.type) {
         case types.FETCH_TASKS:
-            console.log('fetch tasks');
             return {
                 ...state,
                 items: action.payload
+            };
+        case types.NEW_TASK:
+            let task = action.payload;
+            return {
+                ...state,
+                items: [...state.items, task]
             };
         default:
             return state;

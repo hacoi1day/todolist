@@ -6,3 +6,10 @@ export const fetchTasks = (tasks) => {
         payload: tasks,
     }
 }
+
+export const newTask = (task) => {
+    return {
+        type: types.NEW_TASK,
+        payload: task
+    }
+}

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {fetchTasks} from './../actions/taskAction';
-
 import Task from './Task'
 
 class ListTask extends Component {
